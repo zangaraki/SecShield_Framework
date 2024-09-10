@@ -1,0 +1,6 @@
+policyID,subject,action,resource,environment,effect
+1,"Role:""Teacher""",GET,"URI:""192.168.1.12""",Time_Flag:5,allow
+2,Age:10,GET,"URI:""192.168.1.3""",Time_Flag:5,allow
+3,"Role:""Doctor""",PUT,,Time_Flag:5,allow
+4,"Role:""Worker""",GET,DOMAIN:1,"IP:""192.51.02.105""",allow
+5,Age:25,PUT,DOMAIN:2,,allow

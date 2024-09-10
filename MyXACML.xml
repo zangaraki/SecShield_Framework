@@ -1,0 +1,143 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Policies>
+<Policy PolicyId="Policy1" RuleCombiningAlgId="permit-overrides">
+<Target>
+<AnyOf>
+<AllOf>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.168.1.2</AttributeValue>
+<AttributeDesignator AttributeId="URI" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.51.02.110</AttributeValue>
+<AttributeDesignator AttributeId="IP" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">USA</AttributeValue>
+<AttributeDesignator AttributeId="Location" Category="subject" DataType="string"/>
+</Match>
+</AllOf>
+</AnyOf>
+</Target>
+<Rule Effect="Permit">
+<Actions>
+<Action>
+<OpenFlowRule>allow</OpenFlowRule>
+</Action>
+</Actions>
+</Rule>
+</Policy>
+
+<Policy PolicyId="Policy2" RuleCombiningAlgId="permit-overrides">
+<Target>
+<AnyOf>
+<AllOf>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.168.1.12</AttributeValue>
+<AttributeDesignator AttributeId="URI" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.51.02.130</AttributeValue>
+<AttributeDesignator AttributeId="IP" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">6</AttributeValue>
+<AttributeDesignator AttributeId="Location" Category="subject" DataType="string"/>
+</Match>
+</AllOf>
+</AnyOf>
+</Target>
+<Rule Effect="Permit">
+<Actions>
+<Action>
+<OpenFlowRule>allow</OpenFlowRule>
+</Action>
+</Actions>
+</Rule>
+</Policy>
+
+<Policy PolicyId="Policy3" RuleCombiningAlgId="permit-overrides">
+<Target>
+<AnyOf>
+<AllOf>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.168.1.55</AttributeValue>
+<AttributeDesignator AttributeId="URI" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.51.02.160</AttributeValue>
+<AttributeDesignator AttributeId="IP" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">3</AttributeValue>
+<AttributeDesignator AttributeId="Location" Category="subject" DataType="string"/>
+</Match>
+</AllOf>
+</AnyOf>
+</Target>
+<Rule Effect="Permit">
+<Actions>
+<Action>
+<OpenFlowRule>allow</OpenFlowRule>
+</Action>
+</Actions>
+</Rule>
+</Policy>
+
+<Policy PolicyId="Policy4" RuleCombiningAlgId="permit-overrides">
+<Target>
+<AnyOf>
+<AllOf>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.168.1.69</AttributeValue>
+<AttributeDesignator AttributeId="URI" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.51.02.110</AttributeValue>
+<AttributeDesignator AttributeId="IP" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">6</AttributeValue>
+<AttributeDesignator AttributeId="Location" Category="subject" DataType="string"/>
+</Match>
+</AllOf>
+</AnyOf>
+</Target>
+<Rule Effect="Permit">
+<Actions>
+<Action>
+<OpenFlowRule>allow</OpenFlowRule>
+</Action>
+</Actions>
+</Rule>
+</Policy>
+
+<Policy PolicyId="Policy5" RuleCombiningAlgId="permit-overrides">
+<Target>
+<AnyOf>
+<AllOf>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.168.1.5</AttributeValue>
+<AttributeDesignator AttributeId="URI" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">192.51.02.158</AttributeValue>
+<AttributeDesignator AttributeId="IP" Category="resource" DataType="string"/>
+</Match>
+<Match MatchId="string-equal">
+<AttributeValue DataType="string">1</AttributeValue>
+<AttributeDesignator AttributeId="Location" Category="subject" DataType="string"/>
+</Match>
+</AllOf>
+</AnyOf>
+</Target>
+<Rule Effect="Permit">
+<Actions>
+<Action>
+<OpenFlowRule>allow</OpenFlowRule>
+</Action>
+</Actions>
+</Rule>
+</Policy>
+</Policies>
