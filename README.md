@@ -5,7 +5,7 @@ SecShield is a novel Software Defined Network (SDN)-based framework, particularl
 
 ## Configuration &amp; System Requirements ##
 
- SecShield requires an installation of **Java JDK version 17**. To resolve the project dependencies, you will need to have **NetBeans version 16 or higher** installed. For a manual start, these variables - as well as multiple variables concerning the simulation setting - can be configured in the Config.java  file. Overall, you can configure the following variables and files:
+SecShield requires an installation of **Java JDK version 17**. To resolve the project dependencies, you will need to have **NetBeans version 16 or higher** installed. You can configure the following variables:
 
 > - **Method:** Select ‘Base’ if you want to run the Base framework, or ‘Proposed' if you want to run the SecShield framework. The Base framework is the implementation of the framework proposed in Bander Alzahrani and Nikos Fotiou, 'Enhancing Internet of Things Security Using Software-Defined Networking,' Journal of Systems Architecture 110 (2022): 101779.
 > - **CoapServer_Number::** Numberَ of Coap Servers.
